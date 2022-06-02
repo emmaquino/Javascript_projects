@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anidados</title>
+</head>
+<body>
+    <script>
+        var num = prompt("Dame un número:")
+        num = parseInt(num)
+
+        if(!isNaN(num)){
+            var num2 = prompt("Dame otro número:")
+            num2 = parseInt(num2)
+
+            if(!isNaN(num2)){
+                var mult = num * num2
+
+                if(mult > 1000){
+                    alert("Felicidades!")
+                }else{
+                    resto = mult - 1000
+                    alert("Lo siento! te faltaron " + resto + " para llegar a 1000.")
+                }
+
+            }else{
+                alert("Error: no ha ingresado un número valido.")  
+            }
+
+        }else{
+            alert("Error: no ha ingresado un número valido.")
+        }
+    </script>
+</body>
+</html>
